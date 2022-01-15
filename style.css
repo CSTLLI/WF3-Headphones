@@ -1,0 +1,88 @@
+/* ************************************************************************************** */
+/*                                                                                        */																					  
+/* Project: Headphones                                  / $$      /$$ /$$$$$$$$ /$$$$$$   */
+/*                  			                        | $$  /$ | $$| $$_____//$$__  $$  */
+/* style.css                                     	    | $$ /$$$| $$| $$     |__/  \ $$  */
+/*                                                  	| $$/$$ $$ $$| $$$$$     /$$$$$/  */
+/* By: vcastell <valeriocastellipro@gmail.com>	        | $$$$_  $$$$| $$__/    |___  $$  */
+/*                                              		| $$$/ \  $$$| $$      /$$  \ $$  */
+/* Created: 2022/01/13 09:33:01 vcastell     	        | $$/   \  $$| $$     |  $$$$$$/  */
+/* Updated: 2022/01/13 09:33:01 vcastell                |__/     \__/|__/      \______/   */
+/*                                                                    				      */
+/******************************************************************************************/
+
+/* IMPORTATIONS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 62.5%;
+	
+	--black: #090c13;
+	--shadow: rgba(9, 12, 19, 0.15);
+	--overlay: rgba(9, 12, 19, 0.55);
+	--white: #ffffff;
+	--orange: #fe696a;
+	--orange-500: #ff4243;
+	--gray-200: #f3f5f9;
+	--gray-300: #e6e6e6;
+	--gray-500: #7e879c;
+	--gray-700: #372f50;
+	--gray-800: #2b3445;
+	--pink: #e8c4c0;
+	--yellow: #f7e6d5;
+	
+}
+
+body{
+	font-size: 1.6rem;
+	margin: 0;
+}
+
+/* ### HEADER ### */
+
+/* Titre */
+
+#title{
+	display: block;
+	color: var(--black);
+	font-weight: 400;
+	font-size: 3rem;
+	text-decoration: none;
+}
+
+header{
+	display: flex;
+	background-color: var(--gray-200);
+	justify-content: space-between;
+	padding: 40px;
+	width: 70%;
+	margin: auto;
+}
+
+.nav-bar ul{
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+}
+
+.nav-bar ul li{
+	list-style: none;
+}
+
+.nav-bar ul li a,
+.nav-bar-account ul li a{
+	text-decoration: none;
+	color: var(--black);
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+.nav-bar-account ul{
+	display: flex;
+	gap: 35px;
+}
+
+.nav-bar-account ul li{
+	list-style: none;
+}
