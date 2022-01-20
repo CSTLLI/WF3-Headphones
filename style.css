@@ -195,7 +195,7 @@ main .choose-style .title {
 }
 
 main .choose-style .colors {
-	padding: 20px 0;
+	padding: 10px 0 40px 0;
 	display: flex;
 	gap: 10px;
 }
@@ -220,15 +220,17 @@ main .choose-style .colors div span{
 	border-radius: 50%;
 }
 
-main .choose-style .colors .bg-pink{
-	background-color: var(--orange-500);
+.bg-pink{
+	width: 24px;
+	height: 24px;
+	background-color: var(--pink);
 }
 
-main .choose-style .colors .bg-gray{
+.bg-gray{
 	background-color: var(--gray-500);
 }
 
-main .choose-style .colors .bg-yellow{
+.bg-yellow{
 	background-color: var(--yellow);
 }
 
@@ -287,6 +289,10 @@ main .choose-style .colors .bg-yellow{
 
 .desc .left-side{
 	width: 50%;
+}
+
+.desc .right-side div{
+	padding: 10px 0;
 }
 
 /* REVIEWS */
