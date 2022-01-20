@@ -166,4 +166,206 @@ header .product .desc{
 
 .center{
 	padding: 9%;
+	width: 65%;
+}
+
+/* ### BODY ### */
+
+main .choose-style{
+	padding: 40px 0;
+	color: var(--gray-800);
+}
+
+main .choose-style .container{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+main .choose-style .select{
+	align-self: center;
+}
+
+main .choose-style .select h2{
+	font-weight: 600;
+}
+
+main .choose-style .title {
+	display: flex;
+	gap: 20px;
+}
+
+main .choose-style .colors {
+	padding: 20px 0;
+	display: flex;
+	gap: 10px;
+}
+
+main .choose-style .colors div{
+	padding: 3px;
+	height: 24px;
+	width: 24px;
+	border-radius: 50%;
+	border: 1px solid var(--gray-500);
+}
+
+main .choose-style .colors img{
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+}
+
+main .choose-style .colors div span{
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+}
+
+main .choose-style .colors .bg-pink{
+	background-color: var(--orange-500);
+}
+
+main .choose-style .colors .bg-gray{
+	background-color: var(--gray-500);
+}
+
+main .choose-style .colors .bg-yellow{
+	background-color: var(--yellow);
+}
+
+.separator{
+	border-bottom: 1px solid var(--gray-500);
+	margin-bottom: 125px;
+}
+
+/* GALERIE PHOTOS */
+
+.gallery{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.gallery h2{
+	color: var(--gray-800);
+	font-weight: 500;
+	font-size: 3rem;
+}
+
+.gallery .grid{
+	display: grid;
+	grid-template-columns: repeat(3, 2fr);
+	gap: 20px;
+	justify-items: center;
+}
+
+.gallery .grid img{
+	border-radius: 10px;
+	width: 85%;
+}
+
+/* CARACTERISTIQUES TECH */
+
+.product-detail{
+	color: var(--gray-800);
+	padding-bottom: 100px;
+}
+
+.product-detail h2{
+	font-weight: 500;
+	font-size: 3rem;
+	text-align: center;
+}
+
+.product-detail h3{
+	font-weight: 300;
+}
+
+.desc{
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+}
+
+.desc .left-side{
+	width: 50%;
+}
+
+/* REVIEWS */
+
+.customers{
+	background-color: var(--gray-200);
+	padding: 70px 0 100px 0;
+}
+
+.customers h2{
+	color: var(--gray-800);
+	font-weight: 500;
+	font-size: 3rem;
+	text-align: center;
+}
+
+.cards{
+	display: flex;
+	gap: 20px;
+}
+
+.card > p{
+	background-color: var(--white);
+	color: var(--gray-500);
+	font-size: 1.5rem;
+	font-weight: 300;
+	border-radius: 6px;
+	box-shadow: 0 3px 3px rgba(9, 12, 19, 0.15);
+	padding: 23px;
+	line-height: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.card .profile{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	line-height: 0.75rem;
+}
+
+.card .profile .name p:first-child{
+	font-weight: bold;
+}
+
+.card .profile img{
+	width: 20%;
+	height: 20%;
+	border-radius: 50%;
+}
+
+/* ### FOOTER ###  */
+
+footer{
+	padding: 100px 0;
+	background-color: var(--gray-800);
+}
+
+footer nav{
+	display: flex;
+	justify-content: left;
+	gap: 100px;
+}
+
+.navbar h3{
+	font-weight: bold;
+	color: var(--white);
+}
+
+.navbar ul{
+	list-style: none;
+	padding: 0;
+}
+
+
+.navbar ul li a{
+	font-size: 1.3rem;
+	text-decoration: none;
+	color: var(--gray-500);
+	text-align: left;
+	line-height: 3.5rem;
 }
