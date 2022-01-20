@@ -39,50 +39,131 @@ body{
 	margin: 0;
 }
 
-/* ### HEADER ### */
-
-/* Titre */
-
-#title{
-	display: block;
-	color: var(--black);
-	font-weight: 400;
-	font-size: 3rem;
-	text-decoration: none;
+i{
+	font-style: normal;
 }
 
-header{
-	display: flex;
-	background-color: var(--gray-200);
-	justify-content: space-between;
-	padding: 40px;
+.container{
 	width: 70%;
 	margin: auto;
 }
 
-.nav-bar ul{
+/* ## Classes réutilisables */
+
+.btn-red{
+	background-color: var(--orange);
+	color: var(--white);
+	border-radius: 10px;
+	padding: 15px 25px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.reduce-size{
+	font-size: 1.5rem;
+}
+
+/* ### HEADER ### */
+
+/* BARRE DE NAVIGATION */
+
+#title{
+	display: block;
+	color: var(--gray-800);
+	font-weight: 400;
+	font-size: 3rem;
+	text-decoration: none;
+	align-self: center;
+}
+
+header{
+	background-color: var(--gray-200);
+	justify-content: space-between;
+}
+
+header .nav-bar{
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+header .nav-bar ul{
 	display: flex;
 	flex-direction: row;
 	gap: 25px;
 }
 
-.nav-bar ul li{
+header .nav-bar ul li{
 	list-style: none;
 }
 
-.nav-bar ul li a,
-.nav-bar-account ul li a{
+header .nav-bar ul li a,
+header .nav-bar-account ul li a{
 	text-decoration: none;
-	color: var(--black);
-	font-size: 2rem;
+	color: var(--gray-800);
+	font-size: 1.7rem;
 	font-weight: 400;
 }
 
-.nav-bar-account ul{
+header .nav-bar-account ul{
 	display: flex;
 	gap: 35px;
 }
 
-.nav-bar-account ul li{
+header .nav-bar-account ul li{
 	list-style: none;
+}
+
+/* PARTIE DU PRODUIT */
+
+header .product{
+	background-image: url("./images/bg-header.jpg");
+	height: 75vh;
+	color: var(--white);
+	padding: 20px;
+
+}
+
+/* Titre */
+
+header .product .title{
+	padding-right: 75%;
+}
+
+header .product .title h1{
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+
+header .product .title h2{
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+/* Prix */
+
+header .product .shop{
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+header .product .shop p{
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+
+/* class du bouton en haut  */
+
+/* Caractéristiques */
+
+header .product .desc{
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.center{
+	padding: 9%;
 }
