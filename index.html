@@ -25,6 +25,8 @@
 		<!-- Liens externes -->
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+		<script src="./script.js" defer></script>
 	</head>
 
 	<body>
@@ -62,7 +64,7 @@
 					</div>
 					
 					<div class="shop">
-						<a class="btn-red" href="#"><i class="bi bi-cart"> Add to cart</i></a>
+						<a class="btn-red" href="#select-color"><i class="bi bi-cart"> Add to cart</i></a>
 						<p>$329.<span class="reduce-size">99</span></p>
 					</div>
 	
@@ -76,40 +78,40 @@
 		</header>
 	
 		<main>
-			<section class="choose-style">
+			<section id="select-color" class="choose-style">
 				<div class="container">
-					<img src="./images/headphones/color-option01.jpg" alt="pink Headphone">
+					<img class="color-option" src="./images/headphones/color-option01.jpg" alt="Headphone">
 		
 					<div class="select">
 						<h2>Choose your style</h2>
 						
 						<div class="title">
-							<p>Rose Gold</p>
+							<p class="product-title">Rose Gold</p>
 							<p>$329.<span class="reduce-size">99</span></p>
 						</div>
 		
 						<div class="colors">
-							<div>
+							<div data-option= "1" class="option option1 active">
 								<span class="bg-pink"></span>
 							</div>
 
-							<div>
+							<div data-option= "2" class="option option2">
 								<span class="bg-gray"></span>
 							</div>
 							
-							<div>
+							<div data-option= "3" class="option option3">
 								<span class="bg-yellow"></span>
 							</div>
 
-							<div>
+							<div data-option= "4" class="option option4">
 								<img src="./images/color-radio01.png" alt="Color Radio 01">
 							</div>
 
-							<div>
+							<div data-option= "5" class="option option5">
 								<img src="./images/color-radio02.png" alt="Color Radio 02">
 							</div>
 							
-							<div>
+							<div data-option= "6" class="option option6">
 								<img src="./images/color-radio03.png" alt="Color Radio 03">
 							</div>
 						</div>

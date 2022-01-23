@@ -218,9 +218,11 @@ main .choose-style .colors div{
 	width: 24px;
 	border-radius: 50%;
 	border: 1px solid var(--gray-500);
+	cursor: pointer;
 }
 
-main .choose-style .colors div:hover{
+main .choose-style .colors div:hover, 
+main .choose-style .colors .active{
 	border-color: var(--orange-500);
 }
 
