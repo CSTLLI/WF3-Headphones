@@ -57,6 +57,11 @@ i{
 	padding: 15px 25px;
 	text-align: center;
 	text-decoration: none;
+	transition: 350ms;
+}
+
+.btn-red:hover{
+	background-color: var(--orange-500);
 }
 
 .reduce-size{
@@ -103,6 +108,7 @@ header .nav-bar-account ul li a{
 	color: var(--gray-800);
 	font-size: 1.7rem;
 	font-weight: 400;
+	transition: 350ms;
 }
 
 header .nav-bar-account ul{
@@ -110,8 +116,14 @@ header .nav-bar-account ul{
 	gap: 35px;
 }
 
-header .nav-bar-account ul li{
+header .nav-bar-account ul li a{
+	font-size: 2rem;
 	list-style: none;
+}
+
+header .nav-bar ul li a:hover, 
+header .nav-bar-account ul li a:hover{
+	color: var(--orange-500);
 }
 
 /* PARTIE DU PRODUIT */
@@ -208,6 +220,10 @@ main .choose-style .colors div{
 	border: 1px solid var(--gray-500);
 }
 
+main .choose-style .colors div:hover{
+	border-color: var(--orange-500);
+}
+
 main .choose-style .colors img{
 	width: 24px;
 	height: 24px;
@@ -215,14 +231,13 @@ main .choose-style .colors img{
 }
 
 main .choose-style .colors div span{
+	display: block;
 	width: 24px;
 	height: 24px;
 	border-radius: 50%;
 }
 
 .bg-pink{
-	width: 24px;
-	height: 24px;
 	background-color: var(--pink);
 }
 
@@ -259,9 +274,35 @@ main .choose-style .colors div span{
 	justify-items: center;
 }
 
-.gallery .grid img{
+.gallery .grid a{
+	position: relative;
+}
+
+.gallery .grid a img{
 	border-radius: 10px;
-	width: 85%;
+	width: 100%;
+	height: 100%;
+}
+
+.gallery .grid a .overlay{
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 22px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	border-radius: 10px;
+	background-color: var(--overlay);
+	transition: 350ms;
+	color: var(--white);
+}
+
+.gallery .grid a .overlay:hover{
+	opacity: 1;
 }
 
 /* CARACTERISTIQUES TECH */
@@ -374,4 +415,9 @@ footer nav{
 	color: var(--gray-500);
 	text-align: left;
 	line-height: 3.5rem;
+	transition: 350ms;
+}
+
+.navbar ul li a:hover{
+	color: var(--white);
 }
